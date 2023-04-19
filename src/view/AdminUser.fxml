@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: wheat;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminUserController">
+    <children>
+        <Pane layoutX="31.0" layoutY="253.0" prefHeight="122.0" prefWidth="124.0">
+            <children>
+                <Button fx:id="mCreate" layoutX="29.0" layoutY="28.0" mnemonicParsing="false" onAction="#addUser" text="New User" />
+                <Button fx:id="mDelete" layoutX="19.0" layoutY="75.0" mnemonicParsing="false" onAction="#deleteUser" text="Remove User" />
+            </children>
+        </Pane>
+        <Button fx:id="mLogOff" layoutX="527.0" layoutY="15.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+        <Label layoutX="252.0" layoutY="14.0" text="Admin Page">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="54.0" layoutY="117.0" text="Username " />
+        <TextField fx:id="tfUsername" layoutX="122.0" layoutY="113.0" promptText="enter username" />
+        <ListView fx:id="listview" layoutX="328.0" layoutY="113.0" prefHeight="233.0" prefWidth="239.0" />
+        <Label layoutX="407.0" layoutY="90.0" text="Name of Users " />
+    </children>
+</AnchorPane>

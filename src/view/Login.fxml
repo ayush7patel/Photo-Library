@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="276.0" prefWidth="414.0" style="-fx-background-color: tan;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <children>
+        <Label layoutX="158.0" layoutY="14.0" prefHeight="27.0" prefWidth="108.0" text="Photo Library" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="46.0" layoutY="76.0" text="Username:" />
+        <TextField fx:id="tfUsername" layoutX="110.0" layoutY="71.0" prefHeight="27.0" prefWidth="195.0" promptText="username" />
+        <Button fx:id="mLogIn" layoutX="183.0" layoutY="126.0" mnemonicParsing="false" onAction="#login" onMouseClicked="#login" text="Log In" />
+        <Label layoutX="177.0" layoutY="189.0" text="Need help?" />
+        <Label layoutX="102.0" layoutY="227.0" text="Add username as &quot;admin&quot; to start off" />
+        <Button fx:id="exitBtn" layoutX="348.0" layoutY="15.0" mnemonicParsing="false" onAction="#exitProgram" text="Exit" />
+    </children>
+</AnchorPane>

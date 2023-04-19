@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="754.0" style="-fx-background-color: coral;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchController">
+    <children>
+        <Button fx:id="mBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
+        <Button fx:id="mLogOff" layoutX="681.0" layoutY="14.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="65.0" text="Log Out" />
+        <ListView fx:id="listview" layoutX="506.0" layoutY="134.0" prefHeight="200.0" prefWidth="200.0" />
+        <Label layoutX="564.0" layoutY="105.0" prefHeight="27.0" prefWidth="81.0" text="List of Tags">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfName" layoutX="505.0" layoutY="354.0" prefHeight="27.0" prefWidth="200.0" />
+        <TextField fx:id="tfValue" layoutX="506.0" layoutY="402.0" prefHeight="27.0" prefWidth="200.0" />
+        <Label layoutX="507.0" layoutY="337.0" text="Name" />
+        <Label layoutX="508.0" layoutY="382.0" prefHeight="27.0" prefWidth="35.0" text="Value" />
+        <Button fx:id="mAddTag" layoutX="400.0" layoutY="441.0" mnemonicParsing="false" onAction="#addTag" prefHeight="27.0" prefWidth="81.0" text="Add Tag" />
+        <DatePicker fx:id="dFrom" layoutX="400.0" layoutY="55.0" prefHeight="25.0" prefWidth="135.0" />
+        <DatePicker fx:id="dTo" layoutX="578.0" layoutY="55.0" prefHeight="25.0" prefWidth="135.0" />
+        <Label layoutX="356.0" layoutY="59.0" prefHeight="17.0" prefWidth="42.0" text="From" />
+        <Label layoutX="553.0" layoutY="59.0" prefHeight="17.0" prefWidth="23.0" text="To" />
+        <Button fx:id="mSearchDate" layoutX="400.0" layoutY="93.0" mnemonicParsing="false" onAction="#dateSearch" text="Seach By Date" />
+        <Button fx:id="mAnySearch" layoutX="492.0" layoutY="441.0" mnemonicParsing="false" onAction="#disjunctiveSearch" prefHeight="27.0" prefWidth="120.0" text="Tag Search" />
+        <ImageView fx:id="imageview" fitHeight="324.0" fitWidth="155.0" layoutX="78.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="mCreateAlbum" layoutX="132.0" layoutY="430.0" mnemonicParsing="false" onAction="#createAlbumOnSearch" text="Create Album" />
+        <ListView fx:id="listOfPhotoView" layoutX="55.0" layoutY="84.0" prefHeight="324.0" prefWidth="243.0" />
+        <Button fx:id="mAllSearch" layoutX="620.0" layoutY="441.0" mnemonicParsing="false" onAction="#conjunctiveSearch" prefHeight="27.0" prefWidth="120.0" text="Advance Search" />
+        <Label layoutX="343.0" layoutY="13.0" text="Searching">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
